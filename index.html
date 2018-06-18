@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Updating CSS variable</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+   <div id="controls">
+        <div class="input-box">
+           <label for="space">space</label>
+           <input type="range" id="space" name="space" min="5" max="200" value="5" data-suffix="px">
+        </div>
+        <div class="input-box">
+            <label for="blur">blur</label>
+            <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-suffix="px">
+        </div>
+        <div class="input-box">
+            <label for="color">color</label>
+            <input type="color" id="color" name="color" value="#0E1822">
+        </div>
+        <div class="input-box">
+            <label for="title">title</label>
+            <input type="text" id="title" name="title" value="Happy Dog" data-prefix="&quot;" data-suffix="&quot;">
+        </div>
+        <div style="clear: both;"></div>
+   </div>
+   <div id="image">
+       <img src="luna.jpg" alt="Happy Dog" />
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
